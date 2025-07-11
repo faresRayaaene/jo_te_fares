@@ -289,10 +289,11 @@ private AudioSource audioSource;
                 cards[cardId].Inactive();
                 cardLeft -= 2;
                 //play 
-                //AudioPlayer.Instance.PlayAudio(1); 
+               
 
                 combo++;
                 score += 1 * combo;  
+                 AudioPlayer.Instance.PlayAudio(3); 
                 UpdateScoreUI();
 
                     if(combo > 1) {
@@ -310,7 +311,7 @@ private AudioSource audioSource;
                 combo = 0;
 
                 //play 
-                //AudioPlayer.Instance.PlayAudio(2); 
+                AudioPlayer.Instance.PlayAudio(2); 
             }
             cardSelected = spriteSelected = -1;
         }
